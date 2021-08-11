@@ -4,7 +4,10 @@ from PIL import Image
 from numpy import asarray
 
 # Carregar imagem original
-image = Image.open('images/original/mascote.jpg')
+#image = Image.open('images/mascote.jpg')
+#image = Image.open('images/meme.jpg')
+#image = Image.open('images/sapo.jpg')
+image = Image.open('images/ifsp.jpg')
 
 #informações imagem original
 #tipo
@@ -23,10 +26,17 @@ convertedImage = image.convert('L')
 
 
 # salvar a imagem convertida
-convertedImage.save('images/convertido/mascote-convertido.jpg')
+#convertedImage.save('images/mascote-convertido.jpg')
+#convertedImage.save('images/meme-convertido.jpg')
+#convertedImage.save('images/sapo-convertido.jpg')
+convertedImage.save('images/ifsp-convertido.jpg')
 
 #carregar imagem convertida
-image = Image.open('images/convertido/mascote-convertido.jpg')
+#image = Image.open('images/mascote-convertido.jpg')
+#image = Image.open('images/meme-convertido.jpg')
+#image = Image.open('images/sapo-convertido.jpg')
+image = Image.open('images/ifsp-convertido.jpg')
+
 
 #informações da imagem convertida
 print(image.format)
@@ -49,4 +59,7 @@ for linha in range(altura):
 
 #transforma a matriz em imagem
 imagemInvertida = Image.fromarray(npImage)
-imagemInvertida.save('images/invertido/mascote-invertido.jpg')
+#imagemInvertida.save('images/mascote-invertido.jpg')
+#imagemInvertida.save('images/meme-invertido.jpg')
+#imagemInvertida.save('images/sapo-invertido.jpg')
+imagemInvertida.save('images/ifsp-invertido.jpg')
